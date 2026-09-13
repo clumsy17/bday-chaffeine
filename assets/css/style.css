@@ -629,6 +629,16 @@
     font-weight: bold;
 }
 
+#Kontener .container {
+    max-width: 600px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
 
 /* PAGE GATE / LOCK */
 #Kontener { display: none !important; }
