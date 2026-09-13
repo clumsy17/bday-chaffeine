@@ -34,7 +34,7 @@ module.exports = (req, res) => {
   const password = String(body.password || '');
 
   if (username !== USERNAME || password !== PASSWORD) {
-    res.status(401).json({ ok: false, error: 'Username atau password salah 💔' });
+    res.status(401).json({ ok: false, error: 'Salah Ih Jangan Maksa :p' });
     return;
   }
 
