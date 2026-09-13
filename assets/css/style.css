@@ -608,11 +608,11 @@
 
 /* Panah carousel jadi hitam */
 .carousel-control-prev-icon {
-    background-image: none;
+    background-image: none !important;
 }
 
 .carousel-control-next-icon {
-    background-image: none;
+    background-image: none !important;
 }
 
 .carousel-control-prev-icon::after {
