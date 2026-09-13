@@ -20,7 +20,7 @@ async function login() {
         const data = await response.json();
 
         if (!response.ok || !data.ok) {
-            error.innerHTML = data.error || "Username atau password salah 💔";
+            error.innerHTML = data.error || "Eitss Salah wleeee :p";
             return;
         }
 
@@ -28,13 +28,13 @@ async function login() {
         document.getElementById("countdownScreen").style.display = "flex";
         startCountdown();
     } catch (e) {
-        error.innerHTML = "Terjadi masalah. Coba lagi ya 💔";
+        error.innerHTML = "Eitss Jangan Di Paksa Dong :p";
     }
 }
 
 function startCountdown() {
     // 22 September 2026 pukul 00:00 WIB (UTC+7)
-    const targetDate = new Date("2026-09-22T00:00:00+07:00").getTime();
+    const targetDate = new Date("2026-09-11T00:00:00+07:00").getTime();
 
     function tick() {
         const now = Date.now();
