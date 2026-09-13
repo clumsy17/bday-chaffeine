@@ -1,0 +1,133 @@
+    <div class="container" style="display:none;" id="Kontener" aria-hidden="true">
+        <div class="ripple-background">
+            <div class="circle xlarge shade2"></div>
+            <div class="circle large shade3"></div>
+            <div class="circle mediun shade4"></div>
+            <div class="circle small shade5"></div>
+        </div>
+
+
+        <div class="container col-md-6 py-8 animate-bottom">
+            <div class="card">
+                <div class="card-body">
+                    <p class="judul">Happybirthday Chaffeineku! </p>
+                    <h2 class="subjudul">Chaterine ❤️</h2>
+                    <hr>
+
+                    <center>
+                        <div id="karosel" class="carousel slide" data-ride="carousel">
+                            <ul class="carousel-indicators">
+                                <li data-target="#karosel" data-slide-to="0" class="active"></li>
+
+                                <li data-target="#karosel" data-slide-to="1"></li>
+
+                                <li data-target="#karosel" data-slide-to="2"></li>
+
+                                <li data-target="#karosel" data-slide-to="3"></li>
+
+                            </ul>
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/api/asset?name=foto1.png" alt="Chaterine">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="/api/asset?name=foto2.png" alt="Chaterine">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="/api/asset?name=foto3.png" alt="Chaterine">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="/api/asset?name=foto4.png" alt="Chaterine">
+                                </div>
+                            </div>
+
+                            <a class="carousel-control-prev" href="#karosel" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#karosel" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                    </center>
+
+                    <hr>
+
+                    <button type="button" class="tombol" style="width: 100%;" data-toggle="modal" data-target="#Modalmuncul" onclick="Mainkannn(); Gassngetik();">
+                   Klik disini
+                  </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="Modalmuncul" tabindex="-1" role="dialog" aria-labelledby="ModalmunculTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" style="color: #D3F3EE;" id="exampleModalLongTitle">Special Wish For My Chaterine. </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="tekss">
+                        </p>
+                        <br><br> - ur lucxxs ❤️
+                    </div>
+                    <audio id="lagu" src="/api/asset?name=lagu.mp3" preload="auto">
+</audio>
+                    <div class="modal-footer">
+                        <button type="button" class="tombol" data-dismiss="modal" onclick="Mainkannn();">Tutup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+function Mainkannn() {
+    var lagu = document.getElementById("lagu");
+    if (!lagu) return;
+    return lagu.paused ? lagu.play() : lagu.pause();
+}
+
+var paragraphIndex = 0;
+var charIndex = 0;
+var speed = 60;
+
+var paragraphs = [
+    "Happy Birthday To The Person Who Became My Favorite Chapter In The Story Of My Life. ❤️",
+    "if life is a book, then meeting you is the plot twist i never knew i needed. you came into my story and somehow made every page feel more meaningful, every moment more beautiful, and every chapter worth remembering.",
+    "with you, i’ve learned that love isn’t just about the grand moments, but also about the little things — the laughter we share, the conversations that never seem to end, the growth we witness in each other, and all the memories we quietly collect along the way.",
+    "you’re the kind of chapter that takes my breath away, the one i’d read over and over without ever getting tired of it. and if i could choose, i’d want to keep turning the pages with you, through every season, every plot twist, every high and low, until we reach all the chapters we haven’t written yet.",
+    "on your birthday, i hope life gives you all the love, happiness, and beautiful things you deserve. may this new chapter bring you closer to your dreams, fill your heart with peace, and give you countless reasons to smile.",
+    "thank you for being such a beautiful part of my story. here’s to another year of you, another year of us, and countless more pages waiting to be written together.",
+    "happy birthday my favorite chapter, chaterine ily.❤️ "
+];
+
+function Gassngetik() {
+    if (paragraphIndex < paragraphs.length) {
+        var teks = document.getElementById("tekss");
+        if (!teks) return;
+        if (charIndex === 0) {
+            var p = document.createElement("p");
+            p.className = "paragraf";
+            teks.appendChild(p);
+        }
+        var currentParagraph = teks.lastElementChild;
+        if (charIndex < paragraphs[paragraphIndex].length) {
+            currentParagraph.innerHTML += paragraphs[paragraphIndex].charAt(charIndex);
+            charIndex++;
+            setTimeout(Gassngetik, speed);
+        } else {
+            paragraphIndex++;
+            charIndex = 0;
+            setTimeout(Gassngetik, 500);
+        }
+    }
+}
+</script>

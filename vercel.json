@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/protected/(.*)",
+      "status": 404
+    },
+    {
+      "handle": "filesystem"
+    }
+  ]
+}

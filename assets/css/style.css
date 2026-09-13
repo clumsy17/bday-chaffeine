@@ -1,0 +1,638 @@
+* {
+    outline: none !important;
+    border: none !important;
+}
+
+/* =========================
+   BACKGROUND
+========================= */
+
+.bodi {
+    height: 100vh;
+    background: linear-gradient(135deg, #ffd6e7, #ffb6d5, #f8a8c8);
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    min-width: 0;
+    word-wrap: break-word;
+
+    background-color: #fff0f6 !important;
+    background-clip: border-box;
+
+    border: 0px solid rgba(0, 0, 0, 0) !important;
+    border-radius: 20px !important;
+
+    box-shadow: 0px 10px 30px rgba(214, 51, 132, 0.25);
+}
+
+
+/* =========================
+   JUDUL
+========================= */
+
+.judul {
+    font-family: 'Concert One', cursive;
+    color: #e83e8c;
+    text-align: center;
+}
+
+
+/* =========================
+   SUB JUDUL
+========================= */
+
+.subjudul {
+    font-family: 'Concert One';
+    color: #d63384;
+    text-align: center;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.tombol {
+    background: linear-gradient(135deg, #ff69b4, #e83e8c);
+    border: none;
+    outline: none;
+
+    border-radius: 30px;
+
+    color: white;
+    padding: 12px;
+
+    font-weight: bold;
+
+    box-shadow: 0px 5px 15px rgba(232, 62, 140, 0.3);
+
+    transition: all 0.3s ease;
+}
+
+.tombol:hover {
+    cursor: pointer;
+
+    background: linear-gradient(135deg, #e83e8c, #d63384);
+
+    border: none;
+    outline: none;
+
+    border-radius: 30px;
+
+    color: white;
+    padding: 12px;
+
+    font-weight: bold;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0px 8px 20px rgba(232, 62, 140, 0.4);
+}
+
+
+/* =========================
+   MODAL
+========================= */
+
+.modal-content {
+    background-color: #fff0f6 !important;
+
+    border-radius: 20px !important;
+
+    box-shadow: 0px 10px 40px rgba(214, 51, 132, 0.3);
+}
+
+
+/* =========================
+   MODAL HEADER
+========================= */
+
+.modal-header {
+    background: linear-gradient(135deg, #ff69b4, #e83e8c);
+
+    color: white;
+
+    border-radius: 20px 20px 0 0;
+}
+
+.modal-title {
+    color: white !important;
+}
+
+
+/* =========================
+   MODAL BODY
+========================= */
+
+.modal-body {
+    color: #8a3158 !important;
+
+    background-color: #fff5f9;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   TEXT PARAGRAPH
+========================= */
+
+#tekss {
+    font-weight: bold;
+    color: #8a3158;
+}
+
+.paragraf {
+    margin-bottom: 20px;
+    line-height: 1.7;
+
+    color: #8a3158;
+}
+
+
+/* =========================
+   MODAL FOOTER
+========================= */
+
+.modal-footer {
+    background-color: #fff5f9;
+
+    border-radius: 0 0 20px 20px;
+}
+
+
+/* =========================
+   PINK RIPPLE BACKGROUND
+========================= */
+
+.circle {
+    position: absolute;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    animation: ripple 15s infinite;
+
+    box-shadow: 0px 0px 20px 0px rgba(255, 105, 180, 0.25);
+}
+
+.small {
+    width: 100px;
+    height: 100px;
+
+    left: -50px;
+    bottom: -50px;
+}
+
+.medium {
+    width: 200px;
+    height: 200px;
+
+    left: -100px;
+    bottom: -100px;
+}
+
+.large {
+    width: 400px;
+    height: 400px;
+
+    left: -200px;
+    bottom: -200px;
+}
+
+.xlarge {
+    width: 600px;
+    height: 600px;
+
+    left: -300px;
+    bottom: -300px;
+}
+
+.xxlarge {
+    width: 7000px;
+    height: 7000px;
+
+    left: -350px;
+    bottom: -350px;
+}
+
+
+/* =========================
+   PINK TRANSPARENCY
+========================= */
+
+.shade1 {
+    opacity: 0.15;
+}
+
+.shade2 {
+    opacity: 0.25;
+}
+
+.shade3 {
+    opacity: 0.35;
+}
+
+.shade4 {
+    opacity: 0.45;
+}
+
+.shade5 {
+    opacity: 0.55;
+}
+
+
+/* =========================
+   RIPPLE ANIMATION
+========================= */
+
+@keyframes ripple {
+    0% {
+        transform: scale(0.8);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(0.8);
+    }
+}
+
+
+/* =========================
+   LOADER
+========================= */
+
+#loader {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    z-index: 1;
+
+    width: 120px;
+    height: 120px;
+
+    margin: -76px 0 0 -76px;
+
+    border: 16px solid #ffe5f0;
+
+    border-radius: 50%;
+
+    border-top: 16px solid #e83e8c;
+
+    animation: spin 1s linear infinite;
+}
+
+
+/* Loader animation */
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+#Kontener {
+    display: none;
+}
+
+
+/* =========================
+   ANIMATE BOTTOM
+========================= */
+
+.animate-bottom {
+    position: relative;
+
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 2s;
+
+    animation-name: animatebottom;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+
+/* =========================
+   CAROUSEL
+========================= */
+
+.carousel-inner {
+    border-radius: 18px;
+
+    box-shadow: 0px 8px 20px rgba(214, 51, 132, 0.2);
+}
+
+.carousel-item img {
+    border-radius: 18px;
+}
+
+
+/* =========================
+   CAROUSEL INDICATOR
+========================= */
+
+.carousel-indicators li {
+    background-color: #ff9ac5 !important;
+}
+
+.carousel-indicators .active {
+    background-color: #e83e8c !important;
+}
+
+/* =========================
+   LOGIN SCREEN
+========================= */
+
+.login-screen,
+.countdown-screen {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #ffd6e7,
+        #ffb6d5,
+        #f8a8c8
+    );
+
+    z-index: 99999;
+}
+
+
+/* LOGIN CARD */
+
+.login-card,
+.countdown-card {
+    width: 90%;
+    max-width: 450px;
+
+    padding: 35px 30px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 45px rgba(214, 51, 132, 0.3);
+}
+
+
+/* HEART */
+
+.login-heart {
+    font-size: 55px;
+    margin-bottom: 10px;
+
+    animation: heartBeat 1.5s infinite;
+}
+
+@keyframes heartBeat {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* TITLE */
+
+.login-card h2,
+.countdown-card h1 {
+    font-family: 'Concert One', cursive;
+    color: #d63384;
+}
+
+.login-card p,
+.countdown-card p {
+    color: #8a3158;
+}
+
+
+/* INPUT */
+
+.login-card input {
+    width: 100%;
+
+    padding: 13px 18px;
+
+    margin-bottom: 12px;
+
+    background: #fff5f9;
+
+    color: #8a3158;
+
+    border: 2px solid #ffd0e2 !important;
+
+    border-radius: 30px;
+
+    outline: none !important;
+
+    box-sizing: border-box;
+}
+
+.login-card input:focus {
+    border-color: #e83e8c !important;
+}
+
+
+/* ERROR */
+
+#loginError {
+    color: #e83e8c;
+
+    font-size: 14px;
+
+    margin-top: 15px;
+}
+
+
+/* =========================
+   COUNTDOWN
+========================= */
+
+.countdown-card {
+    max-width: 650px;
+}
+
+.countdown-card h1 {
+    font-size: 32px;
+}
+
+
+/* COUNTDOWN BOX */
+
+#countdown {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    margin: 30px 0;
+}
+
+.time-box {
+    min-width: 100px;
+
+    padding: 15px 10px;
+
+    background: linear-gradient(
+        135deg,
+        #ff69b4,
+        #e83e8c
+    );
+
+    border-radius: 18px;
+
+    color: white;
+
+    box-shadow:
+        0 8px 20px rgba(232, 62, 140, 0.3);
+}
+
+.time-box span {
+    display: block;
+
+    font-size: 35px;
+
+    font-weight: bold;
+}
+
+.time-box small {
+    font-size: 13px;
+}
+
+.waiting-text {
+    font-size: 14px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .login-card,
+    .countdown-card {
+        width: 90%;
+
+        padding: 25px 20px;
+    }
+
+    .countdown-card h1 {
+        font-size: 25px;
+    }
+
+    #countdown {
+        gap: 6px;
+    }
+
+    .time-box {
+        min-width: 65px;
+
+        padding: 12px 5px;
+    }
+
+    .time-box span {
+        font-size: 25px;
+    }
+
+    .time-box small {
+        font-size: 10px;
+    }
+}
+
+/* Panah carousel jadi hitam */
+.carousel-control-prev-icon {
+    background-image: none;
+}
+
+.carousel-control-next-icon {
+    background-image: none;
+}
+
+.carousel-control-prev-icon::after {
+    content: "‹";
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+}
+
+.carousel-control-next-icon::after {
+    content: "›";
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+}
+
+
+/* PAGE GATE / LOCK */
+#Kontener { display: none !important; }
+#loginScreen, #countdownScreen { position: fixed !important; inset: 0 !important; z-index: 999999 !important; }
+body.gate-open #loginScreen, body.gate-open #countdownScreen { display: none !important; }
+body.gate-open #Kontener { display: block !important; }
+body:not(.gate-open) { overflow: hidden; }

@@ -1,0 +1,108 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Happy Birthday Bocil Sagikuu" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>My Chaterine</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body class="d-flex align-items-center bodi" onload="myFunction()">
+    <!-- LOGIN -->
+<div id="loginScreen" class="login-screen">
+    <div class="login-card">
+        <div class="login-heart">💗</div>
+
+        <h2>Cieee Kepooo!!! wlee :p </h2>
+        <p>Login dulu sini kalau bisa :p  </p>
+
+        <input
+            type="text"
+            id="username"
+            placeholder="Username"
+            autocomplete="off"
+        >
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Password"
+        >
+
+        <button class="tombol" onclick="login()" style="width: 100%;">
+            Login 💌
+        </button>
+
+        <p id="loginError"></p>
+    </div>
+</div>
+
+
+<!-- COUNTDOWN -->
+<div id="countdownScreen" class="countdown-screen" style="display: none;">
+    <div class="countdown-card">
+
+        <div class="login-heart">💗</div>
+
+        <h1>Eitsss Tunggu Dong, Belum Saatnyaa :p </h1>
+        <p>Tunggu Yaahh Cantikkuu!!</p>
+
+        <div id="countdown">
+
+            <div class="time-box">
+                <span id="days">00</span>
+                <small>Days</small>
+            </div>
+
+            <div class="time-box">
+                <span id="hours">00</span>
+                <small>Hours</small>
+            </div>
+
+            <div class="time-box">
+                <span id="minutes">00</span>
+                <small>Minutes</small>
+            </div>
+
+            <div class="time-box">
+                <span id="seconds">00</span>
+                <small>Seconds</small>
+            </div>
+
+        </div>
+
+        <p class="waiting-text">
+            ♡ something special is waiting for you :p ♡
+        </p>
+
+    </div>
+</div>
+
+    <div id="loader">
+        <center>
+            <img src="https://i.pinimg.com/originals/a4/f2/cb/a4f2cb80ff2ae2772e80bf30e9d78d4c.gif" width="80px" height="80px">
+        </center>
+    </div>
+
+    <!-- Landing page is intentionally NOT embedded here. It is fetched from the server only after unlock. -->
+    <div id="protectedLanding"></div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="assets/js/salju.js" type="text/javascript"></script>
+<script src="assets/js/countdown.js" type="text/javascript"></script>
+    <script src="assets/js/gate.js" type="text/javascript"></script>
+</body>
+
+</html>
