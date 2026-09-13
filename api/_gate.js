@@ -1,6 +1,6 @@
 const crypto = require('crypto');
 
-const const TARGET = Date.now() - 1000;
+const TARGET = Date.now() - 1000;
 const SECRET = process.env.GATE_SECRET;
 
 function sign(value) {
