@@ -1,6 +1,6 @@
 const crypto = require('crypto');
 
-const TARGET = Date.parse('2026-09-22T00:00:00+07:00');
+const const TARGET = Date.now() - 1000;
 const SECRET = process.env.GATE_SECRET;
 
 function sign(value) {
